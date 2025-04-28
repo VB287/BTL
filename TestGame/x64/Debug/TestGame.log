@@ -1,1 +1,35 @@
-﻿  TestGame.vcxproj -> W:\TestGame\x64\Debug\TestGame.exe
+﻿  Game.cpp
+W:\TestGame\TestGame\Game.cpp(76,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+W:\TestGame\TestGame\Game.cpp(123,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+W:\TestGame\TestGame\Game.cpp(153,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+W:\TestGame\TestGame\Game.cpp(271,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+W:\TestGame\TestGame\Game.cpp(270,107): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+W:\TestGame\TestGame\Game.cpp(280,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+W:\TestGame\TestGame\Game.cpp(279,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+W:\TestGame\TestGame\ECS\ECS.hpp(93,33): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+W:\TestGame\TestGame\ECS\ECS.hpp(93,33): warning C4244:         with
+W:\TestGame\TestGame\ECS\ECS.hpp(93,33): warning C4244:         [
+W:\TestGame\TestGame\ECS\ECS.hpp(93,33): warning C4244:             _Ty=int
+W:\TestGame\TestGame\ECS\ECS.hpp(93,33): warning C4244:         ]
+  (compiling source file 'Game.cpp')
+      W:\TestGame\TestGame\ECS\ECS.hpp(93,33):
+      the template instantiation context (the oldest one first) is
+          W:\TestGame\TestGame\Game.cpp(90,9):
+          see reference to function template instantiation 'T &Entity::addComponent<TransformComponent,int,int,int,int,int>(int &&,int &&,int &&,int &&,int &&)' being compiled
+          with
+          [
+              T=TransformComponent
+          ]
+  
+W:\TestGame\TestGame\ECS\ECS.hpp(93,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Game.cpp')
+      W:\TestGame\TestGame\ECS\ECS.hpp(93,33):
+      the template instantiation context (the oldest one first) is
+          W:\TestGame\TestGame\Game.cpp(128,7):
+          see reference to function template instantiation 'T &Entity::addComponent<TransformComponent,int&,float,int,int,int>(int &,float &&,int &&,int &&,int &&)' being compiled
+          with
+          [
+              T=TransformComponent
+          ]
+  
+  TestGame.vcxproj -> W:\TestGame\x64\Debug\TestGame.exe

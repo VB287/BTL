@@ -278,14 +278,14 @@ void Game::update()
 			CreateEnemyProjectile(Vector2D(0, 2), 400, 2,
 				e->getComponent<TransformComponent>().position.x + 20,
 				e->getComponent<TransformComponent>().position.y + 60);
-			e->getComponent<BasicEnemyComponent>().attack_delay = 200;
+			e->getComponent<BasicEnemyComponent>().attack_delay = 150 + (rand() % 150+1);
 		}
 		if (Collision::AABB(player.getComponent<ColliderComponent>().collider,
 			e->getComponent<ColliderComponent>().collider))
 		{
 			cout << "player hit!" << endl;
 			e->getComponent<BasicEnemyComponent>().updateHitpoints(10000);
-			playerhealth--;
+			playerhealth-=1; updateUI();
 		}
 	}
 
@@ -295,7 +295,7 @@ void Game::update()
 		{
 			cout << "player hit!" << endl;
 			e->destroy();
-			playerhealth--; updateUI();
+			playerhealth-=1; updateUI();
 		}
 	}
 	//cout << projectiles.size() << endl;
